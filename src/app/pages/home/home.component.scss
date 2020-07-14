@@ -1,0 +1,95 @@
+.color {
+  // background-color: #734545;
+  height: 100vh;
+  color: white;
+}
+.color2 {
+  //background-color: #39394e;
+  height: 100vh;
+  overflow: auto;
+  /* width */
+
+}
+  ::-webkit-scrollbar {
+    width: 2px!important;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    // box-shadow: inset 0 0 5px grey!important;
+    // border-radius: 10px;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ff488c!important;
+    // border-radius: 10px;
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ff488c!important;
+  }
+.color3 {
+  // background-color: black;
+  height: 86.8vh;
+}
+.fotoBusqueda {
+  height: 50px;
+  width: 50px;
+}
+.p {
+  padding: 2%;
+}
+.tmagenMonedas {
+  width: 35px;
+  height: 40px;
+}
+.item {
+  margin: auto;
+}
+.cajaP {
+  width: 30%;
+  text-align: center;
+  color: white;
+}
+.foto {
+  img {
+    width: 100%;
+  }
+}
+.buscar {
+  width: 90%;
+  height: 30px;
+  border-radius: 50px;
+  color: white;
+  padding-left: 2%;
+}
+input {
+  border: none;
+  ::placeholder {
+    /* Most modern browsers support this now. */
+    color: white;
+    padding-left: 2%;
+  }
+}
+.nombreB {
+  color: white;
+  text-align: center;
+}
+.b {
+  width: 100%;
+  padding-top: 2%;
+}
+.publicacion {
+  background-color: #282828;
+}
+/**-----------*/
+.botonesAccion {
+  background-color: #ff488c;
+  color: white;
+  text-align: center;
+  height: 50px;
+  margin-left: 1%;
+}
+.bordesLR {
+  border-left: solid #943358;
+  border-right: solid #943358;
+}

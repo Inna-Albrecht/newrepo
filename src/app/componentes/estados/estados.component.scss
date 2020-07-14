@@ -1,0 +1,131 @@
+.like {
+  width: 50px;
+  height: 50px;
+  // background-color: #ff488c;
+  cursor: pointer;
+  transition: all 0.5s;
+  transform-origin: x-offset y-offset;
+  position: absolute;
+  z-index: 9;
+  right: 0;
+ background-position: center;
+  background-size: cover;
+
+}
+.cambio{
+  transition: all 0.5s;
+}
+.recciones {
+  width: 50px;
+  height: 50px;
+  // background-color: #ff488c;
+
+  cursor: pointer;
+  transition: all 0.5s;
+  transform-origin: x-offset y-offset;
+  position: absolute;
+  // z-index: 20000000000009;
+  right: 0;
+  opacity: 0;
+  background-position: center;
+  background-size: cover;
+  // background-color: red;
+}
+/*
+61px 127px 193px 258px
+*/
+.posicion1 {
+  transition-duration: 190ms;
+
+  transform: translate3d(-61px, 0, 0);
+}
+
+.posicion2 {
+  transition-duration: 290ms;
+
+  transform: translate3d(-127px, 0, 0);
+}
+
+.posicion3 {
+  transition-duration: 390ms;
+
+  transform: translate3d(-193px, 0, 0);
+}
+
+.posicion4 {
+  transition-duration: 490ms;
+
+  transform: translate3d(-258px, 0, 0);
+}
+.posicion5 {
+  transition-duration: 590ms;
+
+  transform: translate3d(-328px, 0, 0);
+}
+
+.aparecer {
+  opacity: 1;
+}
+
+.r {
+  //background-color: #ff4444;
+ // background-image:url('../assets/emojis_01.png')
+}
+
+// .a {
+//  // background-color: #bdbd28;
+//   background-image:url('')
+// }
+
+// .g {
+//  // background-color: #9c9c9c;
+//   background-image:url('')
+// }
+
+// .b {
+//  // background-color: #237dcc;
+//   background-image:url('')
+// }
+
+.likecambio {
+  transform: scale(1.2);
+  // box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+/*------------------------------------------------*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.recciones:hover .tooltiptext {
+  visibility: visible;
+}

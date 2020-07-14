@@ -1,0 +1,53 @@
+.galeria {
+  position: fixed;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 70%;
+  bottom: 0;
+  height: 93%;
+  border-radius: 40px;
+  z-index: 9;
+}
+img {
+  width: calc(100% - 163px);
+}
+
+.imagen {
+  width: 60%;
+  margin: auto;
+  background-size: contain;
+  height: 87%;
+  background-repeat: no-repeat;
+}
+.controladores {
+    height: 100px;
+    position: absolute;
+    width: 100%;
+    color: white;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.left {
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  left: 0;
+}
+.rigth {
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  right: 0;
+}
+.pasadores {
+ position: absolute;
+    cursor: pointer;
+    /* padding-top: 1%; */
+    font-weight: 800;
+    font-size: 29px;
+}

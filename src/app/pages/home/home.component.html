@@ -1,0 +1,51 @@
+<div class="container-fluid">
+  <div class="row">
+    <!-- menu derecho -->
+    <div class="col-md-2 color p">
+      <div class="mAuto cajaP" (click)="miPerfil()">
+        <app-avatar [foto]="datos.photo_profile" [with]="80+'px'" [heigth]="80+'px'"></app-avatar>
+        <h6>{{datos.name}}</h6>
+      </div>
+      <div class="row">
+        <div class="item mAuto">
+          <div class="monedas tmagenMonedas">
+          </div>
+          <h6>{{datos.credits}}</h6>
+        </div>
+        <div class="item mAuto">
+          <div class="vip tmagenMonedas">
+          </div>
+          <h6>{{datos.premium}}</h6>
+        </div>
+      </div>
+      <input class="buscar" [(ngModel)]="buscarT" (change)="buscar()" type="text" placeholder="Search">
+      <div *ngIf="todosBuscar.length>0">
+        <div class="row b" style="margin-left:0px!important" *ngFor="let i of todosBuscar" (click)="verUsuario(i.id)">
+          <app-avatar [foto]="i.photo_profile" [with]="50+'px'" [heigth]="50+'px'"></app-avatar>
+
+          <div class="nombreB mAuto">
+            <h6>{{i.name}}</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin menu derecho -->
+    <div class="col-md-6 color2">
+        <app-publicaciones *ngFor="let i of publicaciones ;index as ii"  [posicion]="ii" [datos]="i">
+        </app-publicaciones>
+    </div>
+    <div class="col-md-3 color3">
+      <div class="row col-md-12 mAuto">
+        <div class="col-md-3  sombras botonesAccion">
+          p
+        </div>
+        <div class="col-md-3 sombras botonesAccion">
+          p
+        </div>
+        <div class="col-md-3  sombras botonesAccion">
+          p
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

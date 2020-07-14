@@ -1,0 +1,42 @@
+.cls-1 {
+  fill: #282828;
+  stroke: #282828;
+}
+
+.cls-1,
+.cls-2,
+.cls-3 {
+  stroke-miterlimit: 10;
+}
+
+.cls-2,
+.cls-3 {
+  fill: none;
+  stroke: #404040;
+  transition: 0.5s all;
+}
+
+.rosa {
+  stroke: #fc478c !important;
+}
+.azul {
+  stroke: #22b2f2 !important;
+}
+.blanco {
+  stroke: white !important;
+}
+.cls-2 {
+  stroke-width: 0.8px;
+}
+
+.cls-4 {
+  fill: #444; //palitos de bombom
+}
+
+.fondo {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  position: fixed;
+  z-index: -5;
+}

@@ -1,0 +1,17 @@
+<div class="container-fluid">
+<br>
+
+  <div class="row col-md-12 mAuto">
+    <div class="centerT mAuto pointer" *ngFor="let i of datos">
+
+      <app-avatar [foto]="i.photo_profile" [with]="70+'px'" [heigth]="70+'px'"></app-avatar>
+
+      <span >{{i.name}}</span>
+      <button type="button" class="btn rosa" (click)="eliminar(i.id)">Desbloquear</button>
+
+
+    </div>
+
+  </div>
+
+</div>

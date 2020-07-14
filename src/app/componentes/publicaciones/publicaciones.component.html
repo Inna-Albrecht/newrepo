@@ -1,0 +1,29 @@
+<div class="targetas sombras mB2 " id="{{posicion}}">
+  <div class="padding2">
+    <div class="row">
+      <div class="row col-md-5">
+        <app-avatar [foto]="datos.photo_profile" [with]="60+'px'" [heigth]="60+'px'"></app-avatar>
+        <h6 class="mAuto">{{datos.name}}r</h6>
+      </div>
+      <div class="col-md-7 ">
+        <app-estados [posicion]="posicion" [emoji]="datos" [key]="datos.keys"></app-estados>
+      </div>
+    </div>
+  </div>
+  <div class="fotoP">
+    {{datos.textArea}}
+  </div>
+  <div class="row">
+    <mat-form-field class="col-md-9">
+      <textarea matInput cdkTextareaAutosize>
+    </textarea>
+    </mat-form-field>
+    <div class="col-md-3">
+
+    </div>
+  </div>
+
+
+
+
+</div>

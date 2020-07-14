@@ -1,0 +1,16 @@
+<div class="grisPrincipal galeria sombra3 row ">
+  <div class="fotoG col-md-12">
+    <div class="row">
+      <app-avatar [foto]="'../../assets/mujer.jpg'" [with]="60+'px'" [heigth]="60+'px'"></app-avatar>
+      Usuario
+    </div>
+    <div class="row controladores col-md-8">
+      <div class="left pasadores radius100" (click)="atras()"><</div> <div class="imagen" [ngStyle]="{backgroundImage:'url('+imagenes+')'}" >
+          <!-- <img [src]="imagenes" alt="" srcset=""> -->
+    </div> 
+      <div class="rigth pasadores radius100" (click)="adelante()">> </div>
+    </div>
+
+  </div>
+  <div class="comentarios col-md-4"></div>
+</div>

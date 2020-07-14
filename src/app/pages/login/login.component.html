@@ -1,0 +1,49 @@
+<div class="container">
+
+  <div *ngIf="!login" class="centrar tamanoCentrar">
+    <div class="texto">
+      What's your sex?
+    </div>
+    <div class="row">
+      <div (click)="logins('mujer','rosa')" class="circulos rosa sombras"></div>
+      <div (click)="logins('ambos','blanco')" class="circulos blanco sombras"></div>
+      <div (click)="logins('hombre','azul')" class="circulos azul sombras"></div>
+    </div>
+  </div>
+
+  <div *ngIf="login" id="login" class="login centrar tamanoLogin">
+    <div class="cajaLogin">
+      <div class="row">
+        <div id="ingresar" (click)="cambiarLogin()" class="boton rosaB t33 sombras borde10">
+          Login now
+        </div>
+        <div id="registrar" (click)="cambiarRegistrar()" class="rosaT borde10 boton tB">
+          Create your account
+        </div>
+      </div>
+      <div *ngIf="inputs" class="inputs animacion">
+        <input type="text" [(ngModel)]="email" placeholder="Your email">
+        <input type="password" [(ngModel)]="password" placeholder="Your password">
+      </div>
+      <div *ngIf="!inputs" class="inputs animacion">
+        <div class=" col-md-11 mAuto">
+          <div class="row">
+            <div (click)="logins('mujer','rosa')" class="circulos rosa sombras "></div>
+            <div (click)="logins('ambos','blanco')" class="circulos blanco sombras "></div>
+            <div (click)="logins('hombre','azul')" class="circulos azul sombras "></div>
+          </div>
+        </div>
+        <input type="text" placeholder="UserName">
+        <input type="text" placeholder="Your email">
+        <input type="text" placeholder="Your password">
+
+        <ejs-datepicker [value]="date" placeholder='Enter date' format="dd-MM-yyyyy"
+          (renderDayCell)='onRenderCell($event)'></ejs-datepicker>
+        <!-- Falta aprovar condiciones y restricciones -->
+      </div>
+    </div>
+    <div class="boton sombras borde10 rosa" (click)="ingresar()">
+      {{textoBoton}}
+    </div>
+  </div>
+</div>

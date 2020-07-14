@@ -1,0 +1,96 @@
+<div class="row col-md-12">
+  <div class="col-md-2">
+    <div [ngStyle]="{backgroundImage:'url('+datos.photo_profile+')'}" class="fotoPerfilU avatar2 radius100 mAuto">
+    </div>
+    <div class="nomYpais col-md-10 mAuto">
+      <h5 style="text-align: center;">{{datos.name}}</h5>
+      <div class="row">
+        <div class="iconosP"> </div> <span>Pais: {{datos.country}}</span>
+      </div>
+      <div class="row">
+        <div class="iconosP"> </div>
+        <span>Edad: {{datos.age}}</span>
+      </div>
+      <div class="row">
+        <div class="iconosP"> </div> <span>Cumpleaños : {{datos.birthday}}</span>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class=" botonFollow rosaB mAuto pT2">
+        <h5 *ngIf="tt!==datos.idF" (click)="accion(false)">Follow</h5>
+        <h5 *ngIf="tt===datos.idF" (click)="accion(true)">Editar</h5>
+      </div>
+
+    </div>
+
+    <div class="col-md-9 row mAuto">
+      <div class="follow mAuto">
+        <h5>1.000</h5>
+        <span>Colombia</span>
+      </div>
+      <div class=" follow mAuto">
+        <h5>1.500</h5>
+        <span>Colombia</span>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-10">
+    <div class="banner sombras" [ngStyle]="{backgroundImage:'url(assets/1.gif)'}">
+
+      <div *ngIf="tt!==datos.idF" class=" botonFollow bloquear rosaB mAuto pT2 sombras block"
+        style="width: 60px; color:white" (click)="bloquear(datos)">
+        <svg class="bi bi-lock" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M11.5 8h-7a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1zm-7-1a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-7zm0-3a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z" />
+        </svg></div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 pT2">
+        <div class="fondoApuntar">
+
+
+          <div class="apuntar mB2 sombras grisPrincipal" (mouseover)="changeText=true" (mouseout)="changeText=false"
+            (click)="publicar(true)">
+
+            <textarea class="mAuto texAInicial" id="content" [(ngModel)]="texArea"></textarea>
+
+            <button class="btn rosaB button publicar rosa mAuto" *ngIf="botonTexto" (click)="b()">Publicar</button>
+          </div>
+        </div>
+        <div class="todasFotos mB2 sombras ">
+          <h6>My photos</h6>
+          <div class="row col-md-12">
+            <!-- <div class="agregarF " *ngIf="tt===datos.idF">
+              <div class="agregarFoto radius100">
+              </div>
+              <div class="mas">+</div>
+            </div> -->
+            <div class="fotoAdd mAuto" *ngFor="let item of foto;index as i"
+              [ngStyle]="{backgroundImage:'url('+item.photo+')'}" (click)="ver(i)">
+            </div>
+          </div>
+        </div>
+        <div *ngIf="datos.publicaciones!==undefined">
+          <app-publicaciones *ngFor="let i of publicaciones ;index as ii"  [texto]="i.textArea" [posicion]="ii"
+            [datos]="i">
+          </app-publicaciones>
+
+        </div>
+      </div>
+      <div class="col-md-4 pT2 text">
+        <h6>Biobliografia</h6>
+        <p>{{datos.bio}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="galeri" *ngIf="galeri">
+    <div class="cerrar" (click)="cerrar()">
+      X
+    </div>
+    <app-galeria [imageness]="datos.fotos" [num]="index" [imagenes]="datos.photo_profile"></app-galeria>
+  </div>
+</div>
+<!-- <app-publicar></app-publicar> -->
+<app-editar-perfil></app-editar-perfil>

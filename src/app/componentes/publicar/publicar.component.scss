@@ -1,0 +1,55 @@
+.editar {
+  width: 40%;
+  height: 70%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 20px;
+  transition: all 0.5s;
+}
+.men {
+  color: white;
+  /* height: 10px; */
+  border-bottom: solid 2px #151414;
+  padding: 2%;
+  text-align: left;
+}
+
+ul li {
+  color: white;
+  list-style-type: none;
+  height: 50px;
+  cursor: pointer;
+}
+ul {
+  padding: 0px;
+}
+
+.h5 {
+  margin-left: 2%;
+  color: white;
+}
+
+.list-group-item {
+  background-color: transparent;
+}
+.cerrar {
+  cursor: pointer;
+}
+
+button {
+  margin-left: 13% !important;
+  margin-right: 13% !important;
+  width: 74% !important;
+  color: white !important;
+  background-color: #fc478c;
+  border: none;
+  transition: all 0.5s;
+}
+button:hover {
+  background-color: #840032;
+  transition: all 0.5s;
+}

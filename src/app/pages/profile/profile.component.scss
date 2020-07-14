@@ -1,0 +1,139 @@
+.fotoPerfilU {
+  width: 200px;
+  height: 200px;
+}
+.nomYpais {
+  color: white;
+}
+.text {
+  color: white;
+}
+
+.todasFotos {
+  background-color: #282828;
+  width: 100%;
+  height: 200px;
+  border-radius: 19px;
+  color: white;
+  padding: 2%;
+}
+.agregarFoto {
+}
+.agregarF {
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+.mas {
+  margin-top: -89px;
+  font-weight: 900;
+  text-align: center;
+  font-size: 50px;
+}
+.fotoAdd {
+  margin-left: 2%;
+}
+// .iconosP{
+//   width: 15px;
+// height: 9px;
+// background-color: white;
+// }
+.galeri {
+}
+.cerrar {
+  color: white;
+}
+.botonFollow {
+  cursor: pointer;
+}
+.apuntar {
+  width: 100%;
+  height: 69px;
+  border-radius: 13px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.block {
+  width: 60px;
+  color: white;
+  /* margin-top: -7px; */
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 28%;
+}
+.apuntarAbierto {
+  transition: all 0.5s;
+  height: 400px;
+}
+.fondoApuntar {
+  transition: all 0.5s;
+  z-index: 5;
+  width: 100%;
+  position: relative;
+}
+.fondoApuntarAbierto {
+  transition: all 0.5s;
+  // position: absolute;
+  z-index: 5;
+  width: 100%;
+}
+button {
+  margin-left: 13% !important;
+  margin-right: 13% !important;
+  width: 74% !important;
+  color: white !important;
+  background-color: #fc478c;
+  border: none;
+  transition: all 0.5s;
+}
+button:hover {
+  background-color: #840032;
+  transition: all 0.5s;
+}
+.textareaT {
+    padding: 2%;
+  width: 100%!important;
+  height: 20em!important;
+  background-color: #101010;
+  border: none;
+  color: white;
+  margin: auto;
+  margin-left: 0%!important;
+  margin-right: 0%!important;
+ margin-top: 0%!important;
+  border-radius: 0px!important;
+  transition: all 0.5s;
+}
+.texAInicial {
+  transition: all 0.5s;
+  width: 93%;
+  height: 3em;
+  background-color: #101010;
+  border: none;
+  color: white;
+  margin: auto;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 1.4%;
+  border-radius: 15px;
+}
+.noscroll {
+  overflow: hidden;
+  resize: none;
+}
+.hiddendiv {
+  display: none;
+  white-space: pre-wrap;
+  width: 500px;
+  min-height: 50px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  padding: 5px;
+  word-wrap: break-word;
+}
+.lbr {
+  line-height: 3px;
+}
+

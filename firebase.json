@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "iwhiffi",
+      "public": "dist/iwhiffi",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

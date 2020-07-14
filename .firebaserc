@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "iwhiffi-a1ad7": {
+      "hosting": {
+        "iwhiffi": [
+          "iwhiffi-a1ad7"
+        ]
+      }
+    }
+  }
+}
